@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI API Chat</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI API Chat</h1>
+            <div class="service-indicator">
+                <span id="serviceName">Servicio: -</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-message">
+                    <p>👋 ¡Hola! Escribe un mensaje para comenzar a chatear con la IA.</p>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <form id="chatForm">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Escribe tu mensaje aquí..." 
+                        rows="3"
+                        required
+                    ></textarea>
+                    <button type="submit" id="sendButton">
+                        <span>Enviar</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
